@@ -28,6 +28,44 @@ namespace LinkedList
             list.GetData(list);
 
             Console.ReadLine();
+            Console.WriteLine();
+
+            var DuplexList = new DuplexLinkedList<int>();
+
+            DuplexList.Add(1);
+            DuplexList.Add(2);
+            DuplexList.Add(3);
+
+            DuplexList.ShowData(DuplexList);
+
+            DuplexList.Remove(2);
+
+            DuplexList.ShowData(DuplexList);
+
+            DuplexList = DuplexList.Reverse();
+
+            DuplexList.ShowData(DuplexList);
+
+            Console.ReadLine();
+            Console.WriteLine();
+
+            DuplexCircularList<int> duplexCircularList = new DuplexCircularList<int>();
+
+            duplexCircularList.Add(44);
+            duplexCircularList.Add(51);
+            duplexCircularList.Add(81);
+            duplexCircularList.Add(58);
+            duplexCircularList.Add(1);
+
+            duplexCircularList.ShowData(duplexCircularList);
+
+            duplexCircularList.Remove(81);
+            duplexCircularList.Remove(1);
+
+            duplexCircularList.ShowData(duplexCircularList);
+
+            Console.ReadLine();
+            Console.WriteLine();
         }
     }
 }
